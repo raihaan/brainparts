@@ -59,7 +59,7 @@ D = size(X,1);
 % initialize w0
 if ~exist('w0','var') || isempty(w0)
     disp('Initializing w0: ');
-    if ~exist('initMet', 'var') || isempty(initMeth)
+    if ~exist('initMeth', 'var') || isempty(initMeth)
         initMeth = 1;
     end
     switch initMeth
