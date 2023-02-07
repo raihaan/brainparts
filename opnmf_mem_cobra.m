@@ -48,9 +48,9 @@ end
 % get rid of the background in order to boost the computational efficiency
 % assumption: background corresponds to positions with stackwise mean value
 % equal to zero
-mean_im = mean(X,2);
-data_matrix_nz = X((mean_im>0),:) ; 
-X = data_matrix_nz ; clear data_matrix_nz ;
+%mean_im = mean(X,2);
+%data_matrix_nz = X((mean_im>0),:) ; 
+%X = data_matrix_nz ; clear data_matrix_nz ;
 
 % variables
 check_step = 100;
