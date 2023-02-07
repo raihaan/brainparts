@@ -171,7 +171,7 @@ H = W'*X ;
 obj_er = norm(X-W*(W'*X), 'fro');
 
 % put results to original dimension
-WW = zeros(Dinit,K) ;
-WW(mean_im>0,:) = W ; clear W;
-W = WW ; clear WW
+%WW = zeros(Dinit,K) ;
+%WW(mean_im>0,:) = W ; clear W;
+%W = WW ; clear WW
 
