@@ -168,6 +168,7 @@ Wh = bsxfun(@times,W,hlen');
 [~,idx] = sort(sum(Wh.^2,1),'descend'); clear Wh
 W = W(:,idx);
 H = W'*X ;
+obj_er = norm(X-W*(W'*X), 'fro');
 
 % put results to original dimension
 WW = zeros(Dinit,K) ;
